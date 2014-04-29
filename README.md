@@ -25,53 +25,6 @@ if (is.present(metal) && is.aNumber(metal)) {
 For now, check the source and tests for a full run down of how things work.
 
 
-## Comparisons
-
-### Operators
-
-* `present`
-* `equal`, `eq`
-* `greaterThan`, `gt`
-* `greaterThanOrEqualTo`, `gte`
-* `lessThan`, `lt`
-* `lessThanOrEqualTo`, `lte`
-
-### Primitives
-
-* `boolean`, `bool`
-* `nil`
-* `undef`
-
-### Objects
-
-* `object`, `obj`
-* `plainObject`
-* `args`
-* `array`, `arr`
-* `func`
-
-### Strings
-
-* `string`, `str`
-* `emptyString`, `emtStr`
-
-### Numbers
-
-* `number`, `num`
-* `aNumber`, `aNum`
-* `integer`, `int`
-* `aInteger`, `aInt`
-* `zero`
-* `aZero`
-
-### Dates
-
-* `date`
-* `sameDate`
-* `today`
-* `futureDate`, `future`
-* `pastDate`, `past`
-
 ### Antonyms
 
 `is.not[methodName]` will return the inverse all methods.
@@ -83,4 +36,4 @@ is.not.greaterThan(1, 2) // true : 1 is not greater than 2
 ## Helpers
 
 * `toInteger`, `toInt`: converts a number to an integer, and `NaN` to `null` because you can do math with `null`.
-* `toNumber`, `toNum`: same, but respects decimals.
+* `toNumber`, `toNum`: same as `toInt`, but respects decimals.
