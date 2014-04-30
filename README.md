@@ -7,18 +7,18 @@ A simple type checker slash validarion module striving for code minimalism and a
 ## Installation
 
 ```
-npm install is-it
+npm install is-too
 ```
 
 ## Usage
 
 ```javascript
-var is = require('is-it')
+var is = require('is-too')
 
-var metal = "666"; // |..|.  .|..|
+var metal = "666" // |..|.  .|..|
 
-if (is.present(metal) && is.aNumber(metal)) {
-  headBang();
+if (is.present(metal) && is.integer(metal)) {
+  headBang()
 }
 ```
 
