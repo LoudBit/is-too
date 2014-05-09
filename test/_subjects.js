@@ -39,6 +39,7 @@ function subjects() {
     'newDate'                     : new Date(),
     'newObject'                   : new Object(),
     'newRegExp'                   : new RegExp("^foo"),
+    // 'newString'                   : new String('foo'),
     'nil'                         : null,
     'objectCreateNull'            : Object.create(null),
     'objectCreateObjectPrototype' : Object.create(Object.prototype),
