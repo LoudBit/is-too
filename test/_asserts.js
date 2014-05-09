@@ -42,12 +42,12 @@ module.exports = {
     })
   },
 
-  notStandard: function(method, keysThatPass, standard) {
+  notStandard: function(method, keysThatFail, standard) {
     subjectKeys.forEach(function(key){
-      if ( keysThatPass.indexOf(key) > -1 )
-        assert.equal(true , is.not[method](subjects[key], standard), key + ' is expected to pass.')
-      else
+      if ( keysThatFail.indexOf(key) > -1 )
         assert.equal(false, is.not[method](subjects[key], standard), key + ' is expected to fail.')
+      else
+        assert.equal(true , is.not[method](subjects[key], standard), key + ' is expected to pass.')
     })
   },
 

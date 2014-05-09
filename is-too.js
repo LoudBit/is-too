@@ -128,6 +128,18 @@ var is = {
     return x <= y
   },
 
+  /**
+   * Is the subject an instance of the standard?
+   *
+   * @method instanceOf
+   * @param {Object} subject
+   * @param {Object} standard, optional, defaults to 0
+   */
+  instanceOf: function(x, y) {
+    return is.present(y) && x instanceof y
+  },
+
+
 
   // PRIMITIVES
 
@@ -406,6 +418,7 @@ is.gt     = is.greaterThan
 is.gte    = is.greaterThanOrEqualTo
 is.lt     = is.lessThan
 is.lte    = is.lessThanOrEqualTo
+is.inst   = is.instanceOf
 
 is.fn     = is.func
 is.bool   = is.boolean
