@@ -35,6 +35,7 @@ var presents = [
   'newDate',
   'newObject',
   'newRegExp',
+  'newString',
   'objectCreateNull',
   'objectCreateObjectPrototype',
   'objectLengthOne',

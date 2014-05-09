@@ -13,6 +13,7 @@ var instanceOfObject = [
   'newDate',
   'newObject',
   'newRegExp',
+  'newString',
   'objectCreateObjectPrototype',
   'objectLengthOne',
   'plainArray',
