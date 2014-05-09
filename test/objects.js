@@ -8,6 +8,7 @@ var objects = [
   'objectCreateNull',
   'objectCreateObjectPrototype',
   'newObject',
+  'newString',
   'emptyObject',
   'plainObject',
   'objectLengthOne',
@@ -25,6 +26,7 @@ var plainObjects = [
   'objectCreateNull',
   'objectCreateObjectPrototype',
   'newObject',
+  'newString',
   'emptyObject',
   'plainObject',
   'objectLengthOne'
