@@ -8,7 +8,7 @@
   "eqeqeq": false,
   "expr": true,
   "immed": false,
-  "latedef": true,
+  "latedef": false,
   "loopfunc": true,
   "noarg": true,
   "sub": true,
