@@ -202,10 +202,6 @@ var is = {
     return x.valueOf && isNaN(x) || true
   },
 
-  regex: function(x) {
-    return Object.prototype.toString.call(x) == '[object RegExp]'
-  },
-
   /**
    * Is the subject an arguments object?
    *
@@ -237,6 +233,28 @@ var is = {
   },
 
 
+  // REGULAR EXPRESSIONS
+
+  /**
+   * Is the subject a regular expression?
+   *
+   * @method regex
+   * @param {RegEx} subject, required
+   */
+  regex: function(x) {
+    return Object.prototype.toString.call(x) == '[object RegExp]'
+  },
+
+  /**
+   * Does the subject match the provided regular expression?
+   *
+   * @method match
+   * @param {String} subject, required
+   * @param {RegExp} standard, required
+   */
+  match: function(x, rx) {
+    return is.rx(rx) && rx.test(x)
+  },
 
   // STRINGS
 
