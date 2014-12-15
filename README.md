@@ -23,7 +23,49 @@ if (is.present(metal) && is.integer(metal)) {
 }
 ```
 
-For now, check the source and tests for a full run down of how things work.
+## Checks
+
+
+* Operators
+  * `present`
+  * `equal`
+  * `exactly`
+  * `greaterThan`
+  * `greaterThanOrEqualTo`
+  * `lessThan`
+  * `lessThanOrEqualTo`
+  * `instanceOf`
+* Primitives
+  * `boolean`
+  * `nil`
+  * `undef`
+* Objects
+  * `object`
+  * `plainObject`
+  * `args`
+  * `array`
+  * `func`
+* Regular Expressions
+  * `regex`
+  * `match`
+* Strings
+  * `string`
+  * `emptyString`
+* Numbers
+  * `number`
+  * `numberString`
+  * `integer`
+  * `integerString`
+  * `hexadecimal`
+  * `hexadecimalString`
+  * `zero`
+  * `zeroString`
+* Dates
+  * `date`
+  * `sameDate`
+  * `today`
+  * `futureDate`
+  * `pastDate`
 
 
 ### Antonyms
