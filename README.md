@@ -2,6 +2,8 @@
 
 A simple type checker slash validation module striving for code minimalism and a thorough test suite.
 
+The primary use case for `is-too` is validating input from a form.
+
 
 ## Installation
 
