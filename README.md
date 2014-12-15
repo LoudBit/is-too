@@ -2,7 +2,6 @@
 
 A simple type checker slash validation module striving for code minimalism and a thorough test suite.
 
-[![browser support](http://ci.testling.com/LoudBit/is-too.png)](http://ci.testling.com/LoudBit/is-too)
 
 ## Installation
 
