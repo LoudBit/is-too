@@ -1,8 +1,9 @@
 # is-too
 
-A simple type checker slash validarion module striving for code minimalism and a thorough test suite.
+A simple type checker slash validation module striving for code minimalism and a thorough test suite.
 
-[![browser support](http://ci.testling.com/LoudBit/is-too.png)](http://ci.testling.com/LoudBit/is-too)
+The primary use case for `is-too` is validating input from a form.
+
 
 ## Installation
 
@@ -22,7 +23,49 @@ if (is.present(metal) && is.integer(metal)) {
 }
 ```
 
-For now, check the source and tests for a full run down of how things work.
+## Checks
+
+
+* Operators
+  * `present`
+  * `equal`
+  * `exactly`
+  * `greaterThan`
+  * `greaterThanOrEqualTo`
+  * `lessThan`
+  * `lessThanOrEqualTo`
+  * `instanceOf`
+* Primitives
+  * `boolean`
+  * `nil`
+  * `undef`
+* Objects
+  * `object`
+  * `plainObject`
+  * `args`
+  * `array`
+  * `func`
+* Regular Expressions
+  * `regex`
+  * `match`
+* Strings
+  * `string`
+  * `emptyString`
+* Numbers
+  * `number`
+  * `numberString`
+  * `integer`
+  * `integerString`
+  * `hexadecimal`
+  * `hexadecimalString`
+  * `zero`
+  * `zeroString`
+* Dates
+  * `date`
+  * `sameDate`
+  * `today`
+  * `futureDate`
+  * `pastDate`
 
 
 ### Antonyms
