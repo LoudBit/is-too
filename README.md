@@ -41,6 +41,10 @@ if (is.present(metal) && is.integer(metal)) {
   * `boolean`
   * `nil`
   * `undef`
+  * `false`
+  * `falsy`
+  * `true`
+  * `truthy`
 * Objects
   * `object`
   * `plainObject`
