@@ -29,7 +29,9 @@ if (is.present(metal) && is.integer(metal)) {
 * Operators
   * `present`
   * `equal`
+  * `unequal`
   * `exactly`
+  * `notExactly`
   * `greaterThan`
   * `greaterThanOrEqualTo`
   * `lessThan`
