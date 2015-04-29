@@ -195,6 +195,47 @@ var is = {
     return x === void 0
   },
 
+  /**
+   * Is the subject exactly false?
+   *
+   * @method false
+   * @param {Object} subject
+   */
+  false: function(x) {
+    return x === false
+  },
+
+  /**
+   * Is the subject falsy?
+   *
+   * @method false
+   * @param {Object} subject
+   */
+  falsy: function(x) {
+    return !x
+  },
+
+  /**
+   * Is the subject exactly true?
+   *
+   * @method true
+   * @param {Object} subject
+   */
+  true: function(x) {
+    return x === true
+  },
+
+  /**
+   * Is the subject truthy?
+   *
+   * @method truthy
+   * @param {Object} subject
+   */
+  truthy: function(x) {
+    return !!x
+  },
+
+
 
   // OBJECTS
 
