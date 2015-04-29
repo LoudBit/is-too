@@ -58,6 +58,17 @@ var is = {
   },
 
   /**
+   * Is the subject loosely different from the standard?
+   *
+   * @method equal
+   * @param {Object} subject, required
+   * @param {Object} standard, required
+   */
+  unequal: function(x, y) {
+    return x != y
+  },
+
+  /**
    * Is the subject strictly equivalent to the standard?
    *
    * @method exactly
@@ -66,6 +77,17 @@ var is = {
    */
   exactly: function(x, y) {
     return x === y
+  },
+
+  /**
+   * Is the subject strictly equivalent to the standard?
+   *
+   * @method exactly
+   * @param {Object} subject, required
+   * @param {Object} standard, required
+   */
+  notExactly: function(x, y) {
+    return x !== y
   },
 
   /**
