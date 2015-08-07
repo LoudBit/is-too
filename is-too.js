@@ -161,6 +161,20 @@ var is = {
     return is.present(y) && x instanceof y
   },
 
+  /**
+   * Is the subject longer than the standard?
+   *
+   * Performs basic JS longer than operator, which will cast values
+   * http://bclary.com/2004/11/07/#a-11.8.2
+   *
+   * @method longerThan
+   * @param {Object} subject
+   * @param {Object} standard, optional, defaults to 0
+   */
+  longerThan: function(x, y) {
+    y = y | 0
+    return is.present(x.length) && x.length > y
+  },
 
 
   // PRIMITIVES
