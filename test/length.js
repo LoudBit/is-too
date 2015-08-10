@@ -23,7 +23,6 @@ var longerThanNothing = [
   'negativeZeroString',
   'newString',
   'objectLengthOne',
-  'objectLengthOne',
   'plainArray',
   'positiveFloatString',
   'positiveHexadecimalString',
@@ -36,88 +35,27 @@ var longerThanNothing = [
 ]
 
 var longerThanOne = [
+  'alphaString',
   'exponent',
   'floatingPointExponent',
-  'hexadecimal',
   'hexadecimalString',
-  'infinity',
   'infinityString',
-  'newDate',
-  'positiveExponent',
-  'positiveFloat',
-  'positiveFloatString',
-  'positiveHexadecimal',
-  'positiveInfinity',
-  'positiveInfinityString',
-  'positiveInteger',
-  'positiveIntegerString',
-]
-
-var longerThanNegativeOne = [
-  'emptyArray',
-  'emptyString',
-  'exponent',
-  'f',
-  'floatingPointExponent',
-  'hexadecimal',
-  'hexadecimalString',
-  'infinity',
-  'infinityString',
-  'negativeZero',
+  'invalidHexadecimalString',
+  'negativeFloatString',
+  'negativeHexadecimalString',
+  'negativeInfinityString',
+  'negativeIntegerString',
+  'negativeOneString',
   'negativeZeroString',
-  'newArray',
-  'newBooleanFalse',
-  'newBooleanTrue',
-  'newDate',
-  'nil',
-  'positiveExponent',
-  'positiveFloat',
+  'newString',
+  'plainArray',
   'positiveFloatString',
-  'positiveHexadecimal',
-  'positiveInfinity',
+  'positiveHexadecimalString',
   'positiveInfinityString',
-  'positiveInteger',
   'positiveIntegerString',
-  'positiveZero',
   'positiveZeroString',
-  't',
-  'whiteSpaceString',
-  'zero',
-  'zeroString'
-]
-
-var longerThanOrEqualToNothing = [
-  'emptyArray',
-  'emptyString',
-  'exponent',
-  'f',
-  'floatingPointExponent',
-  'hexadecimal',
-  'hexadecimalString',
-  'infinity',
-  'infinityString',
-  'negativeZero',
-  'negativeZeroString',
-  'newArray',
-  'newBooleanFalse',
-  'newBooleanTrue',
-  'newDate',
-  'nil',
-  'positiveExponent',
-  'positiveFloat',
-  'positiveFloatString',
-  'positiveHexadecimal',
-  'positiveInfinity',
-  'positiveInfinityString',
-  'positiveInteger',
-  'positiveIntegerString',
-  'positiveZero',
-  'positiveZeroString',
-  't',
-  'whiteSpaceString',
-  'zero',
-  'zeroString',
-  'zeroString',
+  'rxString',
+  'whiteSpaceString'
 ]
 
 
@@ -127,17 +65,13 @@ describe('is.longerThan', function(){
     asserts.is('longerThan', longerThanNothing, skippers)
   })
 
-  // it('negative one `-1`', function(){
-  //   asserts.standard('longerThan', longerThanNegativeOne, -1, skippers)
-  // })
+  it('one `1`', function(){
+    asserts.standard('longerThan', longerThanOne, 1, skippers)
+  })
 
-  // it('one `1`', function(){
-  //   asserts.standard('longerThan', longerThanOne, 1, skippers)
-  // })
-
-  // it('not.longerThan nothing', function(){
-  //   asserts.not('longerThan', longerThanNothing, skippers)
-  // })
+  it('not.longerThan nothing', function(){
+    asserts.not('longerThan', longerThanNothing, skippers)
+  })
 
 })
 
