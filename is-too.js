@@ -169,13 +169,24 @@ var is = {
    *
    * @method longerThan
    * @param {Object} subject
-   * @param {Object} standard, optional, defaults to 0
+   * @param {Number} standard, optional, defaults to 0
    */
   longerThan: function(x, y) {
-    y = y | 0
+    y = y || 0
     return is.present(x.length) && x.length > y
   },
 
+  /**
+   * Is the subject longer than or equal to the standard?
+   *
+   * @method longerThanOrEqualTo
+   * @param {Object} subject
+   * @param {Number} standard, optional, defaults to 0
+   */
+  longerThanOrEqualTo: function(x, y) {
+    y = y || 0
+    return is.present(x.length) && x.length >= y
+  },
 
   // PRIMITIVES
 
