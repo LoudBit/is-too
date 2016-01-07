@@ -233,9 +233,9 @@ describe('is.shorterThanOrEqualTo', function(){
 
 })
 
-describe('is.length', function () {
-  it('is.length is an alias of is.longerThan(0)', function() {
-    assert( is.length('foo') )
-    asserts.is('length', longerThanNothing, skippers)
+describe('is.lengthy', function () {
+  it('is.lengthy is an alias of is.longerThan(0)', function() {
+    assert( is.lengthy('foo') )
+    asserts.is('lengthy', longerThanNothing, skippers)
   })
 })

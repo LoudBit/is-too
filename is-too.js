@@ -551,7 +551,7 @@ is.gt     = is.greaterThan
 is.gte    = is.greaterThanOrEqualTo
 is.lt     = is.lessThan
 is.lte    = is.lessThanOrEqualTo
-is.length = is.longerThan
+is.lengthy= is.longerThan
 is.inst   = is.instanceOf
 
 is.fn     = is.func
