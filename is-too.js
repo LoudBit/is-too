@@ -551,8 +551,12 @@ is.gt     = is.greaterThan
 is.gte    = is.greaterThanOrEqualTo
 is.lt     = is.lessThan
 is.lte    = is.lessThanOrEqualTo
-is.lengthy= is.longerThan
 is.inst   = is.instanceOf
+
+is.lengthy = is.longerThan
+is.minlength = is.longerThanOrEqualTo
+is.maxlength = is.shorterThanOrEqualTo
+
 
 is.fn     = is.func
 is.bool   = is.boolean

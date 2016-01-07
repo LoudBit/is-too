@@ -234,8 +234,20 @@ describe('is.shorterThanOrEqualTo', function(){
 })
 
 describe('is.lengthy', function () {
-  it('is.lengthy is an alias of is.longerThan(0)', function() {
+  it('is an alias of is.longerThan(0)', function() {
     assert( is.lengthy('foo') )
     asserts.is('lengthy', longerThanNothing, skippers)
+  })
+})
+
+describe('is.minlength', function () {
+  it('is an alias of is.longerThanOrEqualTo', function() {
+    asserts.is('minlength', longerThanOrEqualToNothing, skippers)
+  })
+})
+
+describe('is.maxlength', function () {
+  it('is an alias of is.shorterThanOrEqualTo', function() {
+    asserts.is('maxlength', shorterThanOrEqualToNothing, skippers)
   })
 })
