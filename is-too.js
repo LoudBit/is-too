@@ -188,6 +188,33 @@ var is = {
     return is.present(x.length) && x.length >= y
   },
 
+  /**
+   * Is the subject shorter than the standard?
+   *
+   * Performs basic JS shorter than operator, which will cast values
+   * http://bclary.com/2004/11/07/#a-11.8.2
+   *
+   * @method shorterThan
+   * @param {Object} subject
+   * @param {Number} standard, optional, defaults to 0
+   */
+  shorterThan: function(x, y) {
+    y = y || 0
+    return is.present(x.length) && x.length < y
+  },
+
+  /**
+   * Is the subject shorter than or equal to the standard?
+   *
+   * @method shorterThanOrEqualTo
+   * @param {Object} subject
+   * @param {Number} standard, optional, defaults to 0
+   */
+  shorterThanOrEqualTo: function(x, y) {
+    y = y || 0
+    return is.present(x.length) && x.length <= y
+  },
+
   // PRIMITIVES
 
   /**

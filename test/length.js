@@ -116,6 +116,34 @@ var longerThanOrEqualToOne = [
   'zeroString'
 ]
 
+var shorterThanNothing = [] // that's right!
+
+var shorterThanOne = [
+  'args',
+  'emptyArray',
+  'emptyString',
+  'fn',
+  'newArray'
+]
+
+var shorterThanOrEqualToNothing = [
+  'args',
+  'emptyArray',
+  'emptyString',
+  'fn',
+  'newArray'
+]
+
+var shorterThanOrEqualToOne = [
+  'args',
+  'emptyArray',
+  'emptyString',
+  'fn',
+  'newArray',
+  'objectLengthOne',
+  'zeroString'
+]
+
 
 describe('is.longerThan', function(){
 
@@ -154,6 +182,53 @@ describe('is.longerThanOrEqualTo', function(){
 
   it('not.longerThan nothing', function(){
     asserts.not('longerThanOrEqualTo', longerThanOrEqualToNothing, skippers)
+  })
+
+})
+
+
+
+describe('is.shorterThan', function(){
+
+  it('nothing', function(){
+    asserts.is('shorterThan', shorterThanNothing, skippers)
+  })
+
+  it('one `1`', function(){
+    asserts.standard('shorterThan', shorterThanOne, 1, skippers)
+  })
+
+  it('not.shorterThan nothing', function(){
+    asserts.not('shorterThan', shorterThanNothing, skippers)
+  })
+
+  it('is.not.shorterThan([\'foo\'], 1) passes', function(){
+    assert(is.not.shorterThan(['foo'], 1))
+  })
+
+  it('is.not.shorterThan([\'foo\'], 1) passes', function(){
+    assert(is.not.shorterThan(['foo'], 1))
+  })
+
+  it('is.not.shorterThan([\'foo\'], 0) passes', function(){
+    assert(is.not.shorterThan(['foo'], 0))
+  })
+
+})
+
+
+describe('is.shorterThanOrEqualTo', function(){
+
+  it('nothing', function(){
+    asserts.is('shorterThanOrEqualTo', shorterThanOrEqualToNothing, skippers)
+  })
+
+  it('one `1`', function(){
+    asserts.standard('shorterThanOrEqualTo', shorterThanOrEqualToOne, 1, skippers)
+  })
+
+  it('not.shorterThan nothing', function(){
+    asserts.not('shorterThanOrEqualTo', shorterThanOrEqualToNothing, skippers)
   })
 
 })
