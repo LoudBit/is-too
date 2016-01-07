@@ -1,4 +1,7 @@
+var is = require('../is-too')
+var assert = require('assert')
 var asserts = require('./_asserts')
+
 
 var skippers = [
 'objectCreateNull',
@@ -126,6 +129,14 @@ describe('is.longerThan', function(){
 
   it('not.longerThan nothing', function(){
     asserts.not('longerThan', longerThanNothing, skippers)
+  })
+
+  it('is.longerThan([\'foo\'], 0) passes', function(){
+    assert(is.longerThan(['foo'], 0))
+  })
+
+  it('is.not.longerThan([\'foo\'], 1) passes', function(){
+    assert(is.not.longerThan(['foo'], 1))
   })
 
 })
