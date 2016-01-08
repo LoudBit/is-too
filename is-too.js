@@ -173,7 +173,7 @@ var is = {
    */
   longerThan: function(x, y) {
     y = y || 0
-    return is.present(x.length) && x.length > y
+    return !is.undef(x) && !is.nil(x) && x.length > y
   },
 
   /**
@@ -185,7 +185,7 @@ var is = {
    */
   longerThanOrEqualTo: function(x, y) {
     y = y || 0
-    return is.present(x.length) && x.length >= y
+    return !is.undef(x) && !is.nil(x) && x.length >= y
   },
 
   /**
@@ -200,7 +200,7 @@ var is = {
    */
   shorterThan: function(x, y) {
     y = y || 0
-    return is.present(x.length) && x.length < y
+    return !is.undef(x) && !is.nil(x) && x.length < y
   },
 
   /**
@@ -212,7 +212,7 @@ var is = {
    */
   shorterThanOrEqualTo: function(x, y) {
     y = y || 0
-    return is.present(x.length) && x.length <= y
+    return !is.undef(x) && !is.nil(x) && x.length <= y
   },
 
   // PRIMITIVES

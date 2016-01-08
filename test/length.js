@@ -3,11 +3,7 @@ var assert = require('assert')
 var asserts = require('./_asserts')
 
 
-var skippers = [
-'objectCreateNull',
-'nil',
-'undef'
-]
+var skippers = []
 
 var longerThanNothing = [
   'alphaString',
