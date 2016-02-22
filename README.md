@@ -2,7 +2,11 @@
 
 A simple type checker slash validation module striving for code minimalism and a thorough test suite.
 
-The primary use case for `is-too` is validating input from a form.
+The primary use case for `is-too` is validating input from a form, but feel free to use it however you wish.
+
+---
+[![bitHound Overall Score](https://www.bithound.io/github/LoudBit/is-too/badges/score.svg)](https://www.bithound.io/github/LoudBit/is-too) [![bitHound Dependencies](https://www.bithound.io/github/LoudBit/is-too/badges/dependencies.svg)](https://www.bithound.io/github/LoudBit/is-too/master/dependencies/npm)
+---
 
 
 ## Installation
